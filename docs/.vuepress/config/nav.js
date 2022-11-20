@@ -1,8 +1,8 @@
 module.exports = [
-  {text: '首页', link: '/'},
-  {text: '分类', link: '/categories/'},
-  {text: '标签', link: '/tags/'},
-  {text: '关于', link: '/about/'},
-  {text: '友链', link: '/friends/'},
-  {text: '归档', link: '/archives/'}
+  {text: '首頁', link: '/'},
+  {text: '分類', link: '/categories/'},
+  {text: '標籤', link: '/tags/'},
+  {text: '關於', link: '/about/'},
+  {text: '友連', link: '/friends/'},
+  {text: '歸檔', link: '/archives/'}
 ]

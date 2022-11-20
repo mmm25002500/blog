@@ -3,7 +3,7 @@ const nav = require('./config/nav.js');
 module.exports = {
   title: "TershiXia's Blog",
   description: '一個大一工程師', // 描述,以 <meta> 标签渲染到页面html中
-  base: '/blog/', // '/<github仓库名>/'， 默认'/' 
+  base: '/', // '/<github仓库名>/'， 默认'/' 
   head: [
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
     ['meta', { name: 'keywords', content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown'}],
@@ -23,7 +23,7 @@ module.exports = {
     lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
     editLinks: true, // 编辑链接
-    editLinkText: '编辑',
+    editLinkText: '編輯',
 
     // 以下配置是Vdoing主题改动的和新增的配置
     // category: false, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
@@ -92,21 +92,12 @@ module.exports = {
     ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
       thirdparty: [ // 可选，默认 []
         {
-          title: '在MDN中搜索',
-          frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
-          behindUrl: '' // 搜索链接的后面部分，可选，默认 ''
-        },
-        {
-          title: '在Runoob中搜索',
-          frontUrl: 'https://www.runoob.com/?s=',
-        },
-        {
-          title: '在Vue API中搜索',
-          frontUrl: 'https://cn.vuejs.org/v2/api/#',
-        },
-        {
-          title: '在Bing中搜索',
+          title: '在Bing中搜尋',
           frontUrl: 'https://cn.bing.com/search?q='
+        },
+        {
+          title: '在 Google 中搜尋',
+          frontUrl: 'https://www.google.com/search?q='
         }
       ]
     }],
@@ -115,7 +106,7 @@ module.exports = {
 
     ['one-click-copy', { // 代码块复制按钮
       copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
-      copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
+      copyMessage: '複製成功', // default is 'Copy successfully and then paste it for use.'
       duration: 1000, // prompt message display time.
       showInMobile: false // whether to display on the mobile side, default: false.
     }],
@@ -157,9 +148,9 @@ module.exports = {
           // distractionFreeMode: true,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
           id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
-          title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
+          title: "「評論」<%- frontmatter.title %>", // GitHub issue 的标题
           labels: ["Gitalk", "Comment"], // GitHub issue 的标签
-          body:"页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
+          body:"頁面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
         }
       }
     ],

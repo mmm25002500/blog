@@ -59,6 +59,4 @@ Vue 會將資料連結至 DOM，這種資料連結是雙向，因此我們稱為
 
 ## 相關文章
 
-[《 GitHub Actions 实现自动部署静态博客》](https://xugaoyi.com/pages/6b9d359ec5aa5019/)
-
-[《解决百度无法收录搭建在GitHub上的静态博客的问题》](https://xugaoyi.com/pages/41f87d890d0a02af/)
+[《JS 學習筆記二 - Options API》](/pages/39c63e/)
